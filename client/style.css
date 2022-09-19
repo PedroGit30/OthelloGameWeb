@@ -1,0 +1,427 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+
+  background-color: #D3D3D3;
+  background-image: url("https://images.unsplash.com/photo-1559898311-9617e719bc26?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  text-align: center;
+}
+#passw,#userName{
+  height: 2.5vh;
+  width: 8vw;
+  border: 1px solid gray;
+}
+
+input[type = checkBox] {
+
+  width: 20%;
+  height: 80%;
+
+}
+
+button{
+
+  width: 200px;
+  height: 50px;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  border: 2px solid goldenRod;
+  font-family: "Lucida Console", Courier, monospace;
+  font-size: 20px;
+
+}
+button:hover {
+
+  background-color: brown;
+
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+table{
+  width: 400px;
+  font-size: 20px;
+}
+
+
+.checkBox{
+  display: inline-block;
+  height: 20px;
+  width: 45%;
+}
+
+.upBar{
+
+  display: flex;
+  background-color: red;
+  background-color: gray;
+  opacity: 0.5;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  scroll-behavior: smooth;
+  height: 10%;
+
+}
+
+#logo {
+
+  margin: auto;
+  color: black;
+  margin-left: 40%;
+  min-width: 20%;
+  font-size: 2.5vw;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+
+}
+
+.autentication {
+  margin: auto;
+  margin-left: 13vw;
+  display: block;
+}
+
+#errorMessage{
+  display: none;
+  font-size: 20px;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#logged{
+  display: none;
+}
+
+#showUserName{
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  color: white;
+  margin-right: 10px;
+}
+
+.config {
+
+  display: block;
+  margin: auto;
+  width: 45%;
+  margin-top: 8%;
+  font-family: "Lucida Console", Courier, monospace;
+  color: white;
+  font-size: 22px;
+  text-align: center;
+  padding-bottom: 2%;
+
+}
+.config.leave{
+
+  -webkit-animation: slideOff 0.5s forwards;
+  -moz-animation: slideOff 0.5s forwards;
+  animation: slideOff 0.5s forwards;
+
+}
+
+.config.enter{
+
+  -webkit-animation: slideIn 0.5s forwards;
+  -moz-animation: slideIn 0.5s forwards;
+  animation: slideIn 0.5s forwards;
+
+}
+
+@keyframes slideOff {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1200px);
+  }
+}
+
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(1200px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+#configTitle {
+
+  margin-top: 10%;
+  font-family: "Lucida Console", Courier, monospace;
+  font-size: 35px;
+  color: white;
+
+}
+
+#configText{
+
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-size: 25px;
+
+}
+
+.settButton{
+
+  background-color: inherit;
+  color: goldenRod;
+
+}
+
+.settButton:hover{
+
+  background-color: brown;
+
+}
+
+#startGame{
+  margin: auto;
+  display: block;
+  margin-top: 5%;
+  width: 20%;
+  height: 5vh;
+
+}
+
+#errorMessage2{
+
+  font-family: "Lucida Console", Courier, monospace;
+  color: white;
+  font-size: 35px;
+  margin-top: 40px;
+
+}
+
+#gamePart {
+
+  display: none;
+
+}
+
+#loadingText{
+
+  display: none;
+  position: absolute;
+  top: 90%;
+  color: white;
+  left: 50%;
+  margin-left: -170px;
+  font-size: 40px;
+
+}
+
+#loading {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  margin-left: -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid blue;
+  border-bottom: 16px solid blue;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.dashboard{
+
+  display: flex;
+  pointer-events: none;
+
+}
+
+.dashboard.blur {
+
+  opacity: 0.3;
+  filter: blur(4px);
+
+}
+
+#instructions{
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+}
+#skipPlay{
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+}
+#quitGame{
+  width: 200px;
+  height: 50px;
+  display: inline-block;
+}
+
+#commands{
+  width: 100%;
+  margin: auto;
+  height: 10vh;
+  margin-top: 10%;
+
+}
+
+#messages{
+  text-align: left;
+  width: 30%;
+  text-shadow: 2px 2px gray;
+  font-size: 50px;
+  margin-top: 6%;
+  color: white;
+}
+
+#turnText{
+
+  margin-right: 5%;
+}
+
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+#instruc{
+
+  width: 500px;
+}
+
+#displayMesg{
+
+  display: block;
+
+}
+
+#seeRank{
+
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+}
+
+.popup .popuptext {
+  visibility: hidden;
+  background-color: gray;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+  border: 3px solid black;
+}
+
+.popup .show {
+  visibility: visible;
+}
+
+
+#gameState{
+  text-shadow: 2px 2px gray;
+  width: 30%;
+  color: white;
+  border-radius: 20%;
+  margin-top: 6%;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+#square{
+
+  width: 50px;
+  height: 50px;
+  background-color: green;
+  display: inline-block;
+  border: 3px solid gray;
+  margin-right: 20%;
+
+}
+
+#board{
+
+  background-color: black;
+  margin : auto;
+  width: 520px;
+  height: 520px;
+  display: grid;
+  grid-template-columns: repeat(8, 3fr);
+  padding: 13px;
+  margin-bottom: 5%;
+  margin-top: 6%;
+
+}
+
+.cell{
+
+  background-color: green;
+  border: 1px solid black;
+  padding: 22%;
+
+}
+
+.cell:hover{
+
+  opacity: 0.5;
+
+}
+
+.discBoard {
+
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  position: absolute;
+  display: none;
+
+}
+
+.disc{
+
+  border: 3px solid gray;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 20%;
+
+}
+
+.disc.white{
+  background-color: white;
+
+}
+
+.disc.dark{
+  background-color: black;
+
+}

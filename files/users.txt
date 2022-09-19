@@ -1,0 +1,1 @@
+{"dataType":"Map","value":[["player1",{"pass":"0b4c81ddc0f1dcdb7e347a91862aa1eb:953aabef","name":"player1","hash":"5d2bbc279b5ce75815849d5e3f0533ec"}],["player2",{"pass":"12ffd6f2b535ae9e7405df54b054313b:7fc7bf16","name":"player2","hash":"88e77ff74930f37010370c296d14737b"}]]}

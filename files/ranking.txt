@@ -1,0 +1,1 @@
+{"dataType":"Map","value":[["player1",{"nick":"player1","victories":0,"games":0}],["player2",{"nick":"player2","victories":0,"games":0}]]}

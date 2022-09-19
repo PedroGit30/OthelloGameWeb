@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+
+<html lang = "en">
+  <head>
+    <meta charset=UTF-8>
+    <title>Othello Game</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+  </head>
+<body>
+
+  <div class = "upBar">
+
+    <div id = "logo"> Othello Game</div>
+
+    <span id = "errorMessage" class = "autentication"> </span>
+
+    <span class = "autentication" id ="logged">
+
+      <span id = "showUserName"> </span> <a href="#logout" id ="logout"> Logout </a>
+
+    </span>
+
+      <form class = "autentication" id = "notLogged" >
+        <input type="text" id="userName" name="userName" placeholder="User Name" >
+
+        <input type="password" id="passw" name="passw" placeholder="Password">
+
+        <a href="#login" id ="login">Login</a>
+
+      </form>
+
+  </div>
+
+  <div id = "configTitle" > Game Settings </div>
+
+  <div id = "config" class = config>
+
+    <div id = "configText" > play against </div>
+    <button id = "button1" class = "settButton">player</button>
+    <button id = "button2" class = "settButton">pc</button>
+
+  </div>
+  <div id = "errorMessage2"> </div>
+  <div id = loading> </div>
+  <div id = loadingText> Waiting for opponent</div>
+
+  <div id = gamePart>
+    <div id="commands">
+      <div id = "instructions" >
+        <div class = "popup">
+          <div class = "popuptext" id = "instPopup">
+            <div id = "instruc">
+              <h1>Instruções</h1>
+              <h2>Objetivo do Jogo</h2>
+              <p>O objetivo é ter a maioria das peças da cor com que se joga no final do jogo<p>
+              <h2>Regras</h2>
+              <p>O jogo alterna entre jogador com peças pretas e peças brancas</p>
+              <p>Quando um jogador não tem movimentos válidos, passa a sua vez e o oponente continua</p>
+              <p>Quando nenhum dos jogadores tem um movimento válido para fazer, o jogo termina</p>
+              <p>Um movimento só é considerado válido se a casa onde a peça é colocada estiver em contacto com uma casa com uma peça(mesmo na diagonal) e se existir uma peça da mesma cor no final da linha de peças(para os lados, cima e baixo, e diagional)</p>
+            </div>
+          </div>
+        </div>
+        <button> instructions  </button>
+      </div>
+      <div id = "skipPlay"     > <button> skip play     </button>  </div>
+      <div id = "quitGame"     > <button> quit game     </button>  </div>
+      <div id = "seeRank"      >
+        <div class = "popup">
+          <div class = "popuptext" id = "rankPopup">
+            <div id = "rank"> </div>
+          </div>
+        </div>
+        <button> see rank </button>
+      </div>
+    </div>
+
+    <div id = "dashboard" class="dashboard">
+
+      <div id = "gameState">
+        <br>
+        <div>
+          <span class = "disc dark"></span>
+          <span id = "numberBlackDiscs"> 0 </span>
+        </div>
+        <br>
+        <div>
+          <span class = "disc white"></span>
+          <span id = "numberWhiteDiscs"> 0 </span>
+        </div>
+        <br>
+        <div>
+          <span id = "square"></span>
+          <span id = "emptyCells"> 64 </span>
+        </div>
+      </div>
+
+      <span id="board"> </span>
+
+      <span id = "messages">
+        <span> <span id ="turnText"> turn: </span> <span class = "disc dark" id = "turn"> </span> </span>
+        <span id = "displayMesg" > </span>
+
+      </span>
+
+    </div>
+
+  </div>
+
+  <script src="cell.js">        </script>
+  <script src="board.js">       </script>
+  <script src="settings.js">    </script>
+  <script src="player.js">      </script>
+  <script src="ai.js">          </script>
+  <script src="serverComun.js"> </script>
+  <script src="webStorage.js">  </script>
+  <script src="game.js">        </script>
+
+
+</body>
+</html>
