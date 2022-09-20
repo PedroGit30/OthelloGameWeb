@@ -1,6 +1,9 @@
 # Othello multiplayer game in javascript
 
-# To start the server run : node index.js
+To start the server cd into the root folder of the project and run
+```console
+ node index.js
+```
 <pre>
 Once the server is started acess http://localhost:8147 assuming the port is not used, you can change the porte on the conf.js file.
 
